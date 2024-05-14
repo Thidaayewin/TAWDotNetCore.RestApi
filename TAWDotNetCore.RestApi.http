@@ -1,0 +1,6 @@
+@TAWDotNetCore.RestApi_HostAddress = http://localhost:5249
+
+GET {{TAWDotNetCore.RestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
