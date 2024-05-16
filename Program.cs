@@ -11,23 +11,29 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
-    {
-        DataSource = ".",
-        InitialCatalog = "TAWDotNetCore",
-        UserID = "sa",
-        Password = "sa@1234",
-        TrustServerCertificate = true
-    };
+//SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
+//    {
+//        DataSource = ".",
+//        InitialCatalog = "TAWDotNetCore",
+//        UserID = "sa",
+//        Password = "sa@1234",
+//        TrustServerCertificate = true
+//    };
 
-builder.Services.AddDbContext<AppDbContext>(opt =>
+//builder.Services.AddDbContext<AppDbContext>(opt =>
+//{
+
+//    opt.UseSqlServer(sqlConnectionStringBuilder.ConnectionString);
+//}, ServiceLifetime.Transient, ServiceLifetime.Transient);
+
+string connectionString = builder.Configuration.GetConnectionString("DbConnection")!;// will get one connection ! mean can not null
+builder.Services.AddDbContext<AppDbContext>(options =>
 {
+    options.UseSqlServer(connectionString);
+});
 
-    opt.UseSqlServer(sqlConnectionStringBuilder.ConnectionString);
-}, ServiceLifetime.Transient, ServiceLifetime.Transient);
-
-builder.Services.AddScoped<IDbConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
-builder.Services.AddScoped<SqlConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
+//builder.Services.AddScoped<IDbConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
+//builder.Services.AddScoped<SqlConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
 
 var app = builder.Build();
 
