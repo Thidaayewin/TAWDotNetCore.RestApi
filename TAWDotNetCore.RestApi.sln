@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.RestApi", "TAWDotNetCore.RestApi.csproj", "{2643A5B3-9066-447D-9ABC-020ABAF8D82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAWDotNetCore.MinimalApi", "..\TAWDotNetCore.MinimalApi\TAWDotNetCore.MinimalApi.csproj", "{623D4A93-E0BD-471F-B1B8-5F52B7DF77DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.MinimalApi", "..\TAWDotNetCore.MinimalApi\TAWDotNetCore.MinimalApi.csproj", "{623D4A93-E0BD-471F-B1B8-5F52B7DF77DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAWDotNetCore.ConsoleApp2", "..\TAWDotNetCore.ConsoleApp2\TAWDotNetCore.ConsoleApp2.csproj", "{D86932AB-C7A4-418F-AB39-93B88C0C6A6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{623D4A93-E0BD-471F-B1B8-5F52B7DF77DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{623D4A93-E0BD-471F-B1B8-5F52B7DF77DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{623D4A93-E0BD-471F-B1B8-5F52B7DF77DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86932AB-C7A4-418F-AB39-93B88C0C6A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86932AB-C7A4-418F-AB39-93B88C0C6A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86932AB-C7A4-418F-AB39-93B88C0C6A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86932AB-C7A4-418F-AB39-93B88C0C6A6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
