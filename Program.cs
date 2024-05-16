@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using System.Data.SqlClient;
 using TAWDotNetCore.RestApi;
 
@@ -10,9 +11,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<AppDbContext>(opt =>
-{
-    SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
+SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
     {
         DataSource = ".",
         InitialCatalog = "TAWDotNetCore",
@@ -20,8 +19,14 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
         Password = "sa@1234",
         TrustServerCertificate = true
     };
+
+builder.Services.AddDbContext<AppDbContext>(opt =>
+{
+
     opt.UseSqlServer(sqlConnectionStringBuilder.ConnectionString);
 }, ServiceLifetime.Transient, ServiceLifetime.Transient);
+
+builder.Services.AddScoped<IDbConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
 
 var app = builder.Build();
 
