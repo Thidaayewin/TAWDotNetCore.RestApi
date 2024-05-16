@@ -27,6 +27,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 }, ServiceLifetime.Transient, ServiceLifetime.Transient);
 
 builder.Services.AddScoped<IDbConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
+builder.Services.AddScoped<SqlConnection>(n => new SqlConnection(sqlConnectionStringBuilder.ConnectionString));
 
 var app = builder.Build();
 
