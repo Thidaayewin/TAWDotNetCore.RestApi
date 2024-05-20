@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.MinimalApi", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.ConsoleApp2", "..\TAWDotNetCore.ConsoleApp2\TAWDotNetCore.ConsoleApp2.csproj", "{D86932AB-C7A4-418F-AB39-93B88C0C6A6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAWDotNetCore.RestAPIPractices", "..\TAWDotNetCore.RestAPIPractices\TAWDotNetCore.RestAPIPractices.csproj", "{DDC1B686-4F32-498A-893F-E8B4A807FBD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.RestAPIPractices", "..\TAWDotNetCore.RestAPIPractices\TAWDotNetCore.RestAPIPractices.csproj", "{DDC1B686-4F32-498A-893F-E8B4A807FBD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layered_N-Layer_Architecture", "..\Layered_N-Layer_Architecture\Layered_N-Layer_Architecture.csproj", "{08ACB071-D53F-49CF-8B44-A647104B73E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DDC1B686-4F32-498A-893F-E8B4A807FBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC1B686-4F32-498A-893F-E8B4A807FBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC1B686-4F32-498A-893F-E8B4A807FBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ACB071-D53F-49CF-8B44-A647104B73E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ACB071-D53F-49CF-8B44-A647104B73E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ACB071-D53F-49CF-8B44-A647104B73E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ACB071-D53F-49CF-8B44-A647104B73E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
