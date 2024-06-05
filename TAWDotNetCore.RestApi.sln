@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.ConsoleApp2",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.RestAPIPractices", "..\TAWDotNetCore.RestAPIPractices\TAWDotNetCore.RestAPIPractices.csproj", "{DDC1B686-4F32-498A-893F-E8B4A807FBD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layered_N-Layer_Architecture", "..\Layered_N-Layer_Architecture\Layered_N-Layer_Architecture.csproj", "{08ACB071-D53F-49CF-8B44-A647104B73E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TAWDotNetCore.RestApiWithNLayer", "..\Layered_N-Layer_Architecture\TAWDotNetCore.RestApiWithNLayer.csproj", "{08ACB071-D53F-49CF-8B44-A647104B73E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
